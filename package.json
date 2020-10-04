@@ -1,0 +1,24 @@
+{
+  "name": "social-media-dashboard-with-theme-switcher-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kerri-AnnBates/social-media-dashboard-with-theme-switcher-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kerri-AnnBates/social-media-dashboard-with-theme-switcher-master/issues"
+  },
+  "homepage": "https://github.com/Kerri-AnnBates/social-media-dashboard-with-theme-switcher-master#readme",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
