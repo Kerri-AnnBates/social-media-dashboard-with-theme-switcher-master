@@ -4,7 +4,7 @@
   "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "compile:sass": "node-sass src/styles/sass/main.scss src/styles/css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/Kerri-AnnBates/social-media-dashboard-with-theme-switcher-master#readme",
   "devDependencies": {
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "node-sass": "^4.14.1"
   }
 }
