@@ -4,7 +4,7 @@
   "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "node-sass src/styles/sass/main.scss src/styles/css/style.css -w"
+    "compile:sass": "node-sass --watch src/styles/sass -o src/styles/css"
   },
   "repository": {
     "type": "git",
