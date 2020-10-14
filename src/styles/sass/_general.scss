@@ -6,6 +6,12 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: $veryDarkBlueBG;
+  color: $white;
+}
+
 .container {
   max-width: 1000px;
   width: 100%;

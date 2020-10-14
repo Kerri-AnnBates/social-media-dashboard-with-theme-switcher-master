@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/styles/css/main.css">
 
   <title>Frontend Mentor | Kerri-Ann Bates</title>
@@ -13,16 +14,21 @@
 
 <body>
 
-  <header>
+  <header class="dash__header">
     <div class="container">
-      <div>
-        <div>
-          <h1>Social Media Dashboard</h1>
-          <p>Total Followers: 23,004</p>
+      <div class="flex-parent">
+        <div class="flex-item dash__header-info">
+          <h1 class="dash__header-title">Social Media Dashboard</h1>
+          <p class="dash__header-subtitle">Total Followers: 23,004</p>
         </div>
-        <div>
-          Dark Mode
-          <div class="toggle"></div>
+        <div class="flex-item dash__header-toggle">
+          <p class="dash__header-subtitle">Dark Mode</p>
+          <div class="toggle">
+            <label for="toggle" class="toggle-switch">
+              <input type="checkbox" name="toggle" id="toggle">
+              <span class="toggle__slider"></span>
+            </label>
+          </div>
         </div>
       </div>
     </div>
