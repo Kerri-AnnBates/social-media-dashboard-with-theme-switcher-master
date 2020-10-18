@@ -1,0 +1,44 @@
+.card {
+    background-color: $CardBG;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px auto;
+}
+
+.card__numbers {
+    color: $white;
+    font-weight: 700;
+}
+
+.card__numbers_lg {
+    font-size: 50px;
+}
+
+.card__numbers_md {
+    font-size: 25px;
+}
+
+.card__border {
+    border-top: 3px solid transparent;
+
+    &.card_facebook-border {
+        border-color: $facebookColor;
+    }
+    &.card_twitter-border {
+        border-color: $twitterColor;
+    }
+    &.card_instagram-border {   
+        // Need to figure out border radius with gradient
+        border-image: $instagramColor 1;
+    }
+    &.card_youtube-border {
+        border-color: $youtubeColor;
+    }
+}
+
+.followers-text {
+    color: $textBlue;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 12px;
+}

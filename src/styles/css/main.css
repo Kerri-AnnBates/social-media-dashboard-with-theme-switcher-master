@@ -67,3 +67,36 @@ body {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px); }
+
+.card {
+  background-color: #252a41;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 30px auto; }
+
+.card__numbers {
+  color: #ffffff;
+  font-weight: 700; }
+
+.card__numbers_lg {
+  font-size: 50px; }
+
+.card__numbers_md {
+  font-size: 25px; }
+
+.card__border {
+  border-top: 3px solid transparent; }
+  .card__border.card_facebook-border {
+    border-color: #198ff5; }
+  .card__border.card_twitter-border {
+    border-color: #1ca0f2; }
+  .card__border.card_instagram-border {
+    border-image: linear-gradient(90deg, #fdc468 0%, #df4996 100%) 1; }
+  .card__border.card_youtube-border {
+    border-color: #c4032a; }
+
+.followers-text {
+  color: #8b97c6;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 12px; }
