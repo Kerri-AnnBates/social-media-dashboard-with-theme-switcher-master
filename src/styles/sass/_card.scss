@@ -1,3 +1,7 @@
+.top-bar .card {
+    text-align: center;
+}
+
 .card {
     background-color: $CardBG;
     padding: 20px;
@@ -41,4 +45,37 @@
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.card__social-name {
+    color: $textBlue;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.trends {
+    font-size: 12px;
+    font-weight: 700;
+
+    img {
+        padding: 3px 0;
+        margin-right: 5px;
+    }
+}
+
+.trends__up {
+    color: $brightGreen;
+}
+
+.trends__down {
+    color: $brightRed;
 }
