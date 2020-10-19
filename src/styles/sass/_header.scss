@@ -1,23 +1,65 @@
+.dash__header:after {
+    @media (min-width: $desktop-size) {
+        content: "";
+        background-color: $veryDarkBlueTopBG;
+        height: 300px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
 .dash__header {
     padding: 30px 0;
+
+    @media (min-width: $desktop-size) {
+        position: relative;
+    }
 }
 
 .dash__header-subtitle {
     font-weight: 700;
     color: $textBlue;
+
+    @media (min-width: $desktop-size) {
+        margin-right: 10px;
+    }
 }
 
 .dash__header-info {
     padding-bottom: 20px;
     border-bottom: 1px solid $textBlue;
+
+    @media (min-width: $desktop-size) {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
 }
 
 .dash__header-toggle {
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: $desktop-size) {
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 0;
+    }
 }
 
+.flex-parent {
+    display: block;
+
+    @media (min-width: $desktop-size) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 // Toggle
 .toggle-switch {
     display: inline-block;

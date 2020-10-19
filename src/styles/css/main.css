@@ -17,21 +17,56 @@ body {
 .top-bar {
   margin-bottom: 50px; }
 
+@media (min-width: 500px) {
+  .dash__header:after {
+    content: "";
+    background-color: #1f212e;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1; } }
+
 .dash__header {
   padding: 30px 0; }
+  @media (min-width: 500px) {
+    .dash__header {
+      position: relative; } }
 
 .dash__header-subtitle {
   font-weight: 700;
   color: #8b97c6; }
+  @media (min-width: 500px) {
+    .dash__header-subtitle {
+      margin-right: 10px; } }
 
 .dash__header-info {
   padding-bottom: 20px;
   border-bottom: 1px solid #8b97c6; }
+  @media (min-width: 500px) {
+    .dash__header-info {
+      border-bottom: none;
+      padding-bottom: 0; } }
 
 .dash__header-toggle {
   padding-top: 20px;
   display: flex;
   justify-content: space-between; }
+  @media (min-width: 500px) {
+    .dash__header-toggle {
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 0; } }
+
+.flex-parent {
+  display: block; }
+  @media (min-width: 500px) {
+    .flex-parent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }
 
 .toggle-switch {
   display: inline-block;
