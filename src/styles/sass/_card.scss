@@ -79,3 +79,11 @@
 .trends__down {
     color: $brightRed;
 }
+
+.card__heading {
+    margin-bottom: 20px;
+}
+
+.adjacent-alignment {
+    @include flex-items($justify: space-between, $align-items: center);
+}
