@@ -1,0 +1,21 @@
+.top-bar {
+    margin-bottom: 50px;
+    margin-top: -30px;
+
+    @media (min-width: $desktop-size) {
+        margin-top: 0;
+    }
+}
+
+.parent-grid {
+    @media (min-width: $desktop-size) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+
+.bottom-bar h2 {
+    margin-bottom: 20px;
+}

@@ -14,10 +14,7 @@ body {
   margin: auto;
   padding: 0 20px; }
 
-.top-bar {
-  margin-bottom: 50px; }
-
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   .dash__header:after {
     content: "";
     background-color: #1f212e;
@@ -31,21 +28,21 @@ body {
 
 .dash__header {
   padding: 30px 0; }
-  @media (min-width: 500px) {
+  @media (min-width: 800px) {
     .dash__header {
       position: relative; } }
 
 .dash__header-subtitle {
   font-weight: 700;
   color: #8b97c6; }
-  @media (min-width: 500px) {
+  @media (min-width: 800px) {
     .dash__header-subtitle {
       margin-right: 10px; } }
 
 .dash__header-info {
   padding-bottom: 20px;
   border-bottom: 1px solid #8b97c6; }
-  @media (min-width: 500px) {
+  @media (min-width: 800px) {
     .dash__header-info {
       border-bottom: none;
       padding-bottom: 0; } }
@@ -54,7 +51,7 @@ body {
   padding-top: 20px;
   display: flex;
   justify-content: space-between; }
-  @media (min-width: 500px) {
+  @media (min-width: 800px) {
     .dash__header-toggle {
       justify-content: flex-start;
       align-items: center;
@@ -62,7 +59,7 @@ body {
 
 .flex-parent {
   display: block; }
-  @media (min-width: 500px) {
+  @media (min-width: 800px) {
     .flex-parent {
       display: flex;
       justify-content: space-between;
@@ -114,6 +111,9 @@ body {
   padding: 20px;
   border-radius: 5px;
   margin: 30px auto; }
+  @media (min-width: 800px) {
+    .card {
+      margin: 0; } }
 
 .card__numbers {
   color: #ffffff;
@@ -180,3 +180,20 @@ body {
   color: #8b97c6;
   font-weight: 700;
   font-size: 14px; }
+
+.top-bar {
+  margin-bottom: 50px;
+  margin-top: -30px; }
+  @media (min-width: 800px) {
+    .top-bar {
+      margin-top: 0; } }
+
+@media (min-width: 800px) {
+  .parent-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px; } }
+
+.bottom-bar h2 {
+  margin-bottom: 20px; }
