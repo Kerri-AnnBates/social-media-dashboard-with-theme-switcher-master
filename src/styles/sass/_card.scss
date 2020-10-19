@@ -87,3 +87,9 @@
 .adjacent-alignment {
     @include flex-items($justify: space-between, $align-items: center);
 }
+
+.card__text-sm {
+    color: $textBlue;
+    font-weight: 700;
+    font-size: 14px;
+}

@@ -135,5 +135,10 @@ body {
 .adjacent-alignment {
   display: flex;
   flex-direction: row;
-  justify-items: space-between;
+  justify-content: space-between;
   align-items: center; }
+
+.card__text-sm {
+  color: #8b97c6;
+  font-weight: 700;
+  font-size: 14px; }
