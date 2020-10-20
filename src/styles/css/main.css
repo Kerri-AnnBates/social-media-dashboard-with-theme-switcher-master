@@ -6,7 +6,11 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: #1e202a;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 30px 0; }
+  body.light {
+    background-color: #ffffff;
+    color: #63687e; }
 
 .container {
   max-width: 1000px;
@@ -18,13 +22,17 @@ body {
   .dash__header:after {
     content: "";
     background-color: #1f212e;
-    height: 300px;
+    height: 200px;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     z-index: -1; } }
+
+@media (min-width: 800px) {
+  .dash__header.light:after {
+    background-color: #f5f7ff; } }
 
 .dash__header {
   padding: 30px 0; }
@@ -86,6 +94,8 @@ body {
   background: linear-gradient(90deg, #378fe6 0%, #3eda82 100%);
   border-radius: 35px;
   transition: 500ms; }
+  .toggle__slider.light {
+    background: #ffffff; }
 
 .toggle__slider:before {
   position: absolute;
@@ -111,6 +121,8 @@ body {
   padding: 20px;
   border-radius: 5px;
   margin: 30px auto; }
+  .card.light {
+    background-color: #f0f2fa; }
   @media (min-width: 800px) {
     .card {
       margin: 0; } }
@@ -118,6 +130,8 @@ body {
 .card__numbers {
   color: #ffffff;
   font-weight: 700; }
+  .card__numbers.light {
+    color: #1e202a; }
 
 .card__numbers_lg {
   font-size: 50px; }
@@ -142,6 +156,8 @@ body {
   letter-spacing: 0.3rem;
   font-size: 12px;
   margin-bottom: 15px; }
+  .followers-text.light {
+    color: #63687e; }
 
 .card__social-name {
   color: #8b97c6;

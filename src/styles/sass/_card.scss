@@ -8,6 +8,10 @@
     border-radius: 5px;
     margin: 30px auto;
 
+    &.light {
+        background-color: $lightCardBG;
+    }
+
     @media (min-width: $desktop-size) {
         margin: 0;
     }
@@ -16,6 +20,10 @@
 .card__numbers {
     color: $white;
     font-weight: 700;
+
+    &.light {
+        color: $veryDarkBlueText;
+    }
 }
 
 .card__numbers_lg {
@@ -50,6 +58,10 @@
     letter-spacing: 0.3rem;
     font-size: 12px;
     margin-bottom: 15px;
+
+    &.light {
+        color: $darkGrayishBlueText;
+    }
 }
 
 .card__social-name {

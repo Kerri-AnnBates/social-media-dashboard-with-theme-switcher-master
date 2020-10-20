@@ -2,13 +2,19 @@
     @media (min-width: $desktop-size) {
         content: "";
         background-color: $veryDarkBlueTopBG;
-        height: 300px;
+        height: 200px;
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
         z-index: -1;
+    }
+}
+
+.dash__header.light:after {
+    @media (min-width: $desktop-size) {
+        background-color: $veryPaleBlueTopBG;
     }
 }
 
@@ -60,6 +66,7 @@
         align-items: center;
     }
 }
+
 // Toggle
 .toggle-switch {
     display: inline-block;
@@ -96,6 +103,10 @@
     background-color: $veryDarkBlueBG;
     border-radius: 35px;
     transition: 500ms;
+
+    &.light {
+        background-color: $white;
+    }
 }
 
 .toggle-switch input:checked + .toggle__slider:before {
