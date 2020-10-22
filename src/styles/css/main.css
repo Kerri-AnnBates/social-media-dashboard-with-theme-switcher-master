@@ -130,9 +130,11 @@ body {
 .card {
   background-color: #252a41;
   padding: 20px;
-  border-radius: 5px;
   margin: 30px auto;
-  transition: 500ms; }
+  transition: 500ms;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px; }
   .card:hover {
     cursor: pointer;
     background: #2e3551; }
@@ -158,15 +160,20 @@ body {
   font-size: 25px; }
 
 .card__border {
-  border-top: 3px solid transparent; }
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ""; }
   .card__border.card_facebook-border {
-    border-color: #198ff5; }
+    background: #198ff5; }
   .card__border.card_twitter-border {
-    border-color: #1ca0f2; }
+    background: #1ca0f2; }
   .card__border.card_instagram-border {
-    border-image: linear-gradient(90deg, #fdc468 0%, #df4996 100%) 1; }
+    background: linear-gradient(90deg, #fdc468 0%, #df4996 100%); }
   .card__border.card_youtube-border {
-    border-color: #c4032a; }
+    background: #c4032a; }
 
 .followers-text {
   color: #8b97c6;

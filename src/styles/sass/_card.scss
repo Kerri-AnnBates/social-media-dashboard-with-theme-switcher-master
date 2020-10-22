@@ -5,20 +5,22 @@
 .card {
     background-color: $CardBG;
     padding: 20px;
-    border-radius: 5px;
     margin: 30px auto;
     transition: 500ms;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
 
     &:hover {
         cursor: pointer;
-        background: lighten($CardBG,5%);
+        background: lighten($CardBG, 5%);
     }
 
     &.light {
         background-color: $lightCardBG;
 
         &:hover {
-            background: darken($lightCardBG,5%);
+            background: darken($lightCardBG, 5%);
         }
     }
 
@@ -45,20 +47,24 @@
 }
 
 .card__border {
-    border-top: 3px solid transparent;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
 
     &.card_facebook-border {
-        border-color: $facebookColor;
+        background: $facebookColor;
     }
     &.card_twitter-border {
-        border-color: $twitterColor;
+        background: $twitterColor;
     }
-    &.card_instagram-border {   
-        // Need to figure out border radius with gradient
-        border-image: $instagramColor 1;
+    &.card_instagram-border {
+        background: $instagramColor;
     }
     &.card_youtube-border {
-        border-color: $youtubeColor;
+        background: $youtubeColor;
     }
 }
 
