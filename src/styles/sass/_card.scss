@@ -20,10 +20,10 @@
 .card__numbers {
     color: $white;
     font-weight: 700;
+}
 
-    &.light {
-        color: $veryDarkBlueText;
-    }
+.card.light .card__numbers {
+    color: $veryDarkBlueText;
 }
 
 .card__numbers_lg {

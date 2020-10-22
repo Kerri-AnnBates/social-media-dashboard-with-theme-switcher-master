@@ -94,8 +94,6 @@ body {
   background: linear-gradient(90deg, #378fe6 0%, #3eda82 100%);
   border-radius: 35px;
   transition: 500ms; }
-  .toggle__slider.light {
-    background: #ffffff; }
 
 .toggle__slider:before {
   position: absolute;
@@ -107,6 +105,8 @@ body {
   background-color: #1e202a;
   border-radius: 35px;
   transition: 500ms; }
+  .toggle__slider:before.light {
+    background-color: #ffffff; }
 
 .toggle-switch input:checked + .toggle__slider:before {
   -webkit-transform: translateX(26px);
@@ -130,8 +130,9 @@ body {
 .card__numbers {
   color: #ffffff;
   font-weight: 700; }
-  .card__numbers.light {
-    color: #1e202a; }
+
+.card.light .card__numbers {
+  color: #1e202a; }
 
 .card__numbers_lg {
   font-size: 50px; }
