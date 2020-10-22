@@ -108,6 +108,14 @@ body {
   .toggle__slider:before.light {
     background-color: #ffffff; }
 
+.toggle__slider.light {
+  background: #aeb3cb; }
+  .toggle__slider.light:before {
+    background-color: #ffffff; }
+  @media (min-width: 800px) {
+    .toggle__slider.light {
+      background: linear-gradient(90deg, #378fe6 0%, #3eda82 100%); } }
+
 .toggle-switch input:checked + .toggle__slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
