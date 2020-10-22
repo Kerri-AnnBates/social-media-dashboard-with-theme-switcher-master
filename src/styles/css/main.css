@@ -11,6 +11,8 @@ body {
   body.light {
     background-color: #ffffff;
     color: #63687e; }
+    body.light .dash__header-title {
+      color: #1e202a; }
 
 .container {
   max-width: 1000px;
@@ -22,13 +24,14 @@ body {
   .dash__header:after {
     content: "";
     background-color: #1f212e;
-    height: 200px;
+    height: 230px;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -1; } }
+    z-index: -1;
+    margin-top: -30px; } }
 
 @media (min-width: 800px) {
   .dash__header.light:after {
@@ -109,12 +112,12 @@ body {
     background-color: #ffffff; }
 
 .toggle__slider.light {
-  background: #aeb3cb; }
+  background: #aeb3cb;
+  transition: 500ms; }
+  .toggle__slider.light:hover {
+    background: linear-gradient(90deg, #378fe6 0%, #3eda82 100%); }
   .toggle__slider.light:before {
     background-color: #ffffff; }
-  @media (min-width: 800px) {
-    .toggle__slider.light {
-      background: linear-gradient(90deg, #378fe6 0%, #3eda82 100%); } }
 
 .toggle-switch input:checked + .toggle__slider:before {
   -webkit-transform: translateX(26px);
@@ -128,9 +131,15 @@ body {
   background-color: #252a41;
   padding: 20px;
   border-radius: 5px;
-  margin: 30px auto; }
+  margin: 30px auto;
+  transition: 500ms; }
+  .card:hover {
+    cursor: pointer;
+    background: #2e3551; }
   .card.light {
     background-color: #f0f2fa; }
+    .card.light:hover {
+      background: #dde1f4; }
   @media (min-width: 800px) {
     .card {
       margin: 0; } }

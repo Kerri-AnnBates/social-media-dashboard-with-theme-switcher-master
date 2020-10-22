@@ -7,9 +7,19 @@
     padding: 20px;
     border-radius: 5px;
     margin: 30px auto;
+    transition: 500ms;
+
+    &:hover {
+        cursor: pointer;
+        background: lighten($CardBG,5%);
+    }
 
     &.light {
         background-color: $lightCardBG;
+
+        &:hover {
+            background: darken($lightCardBG,5%);
+        }
     }
 
     @media (min-width: $desktop-size) {

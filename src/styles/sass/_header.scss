@@ -2,13 +2,14 @@
     @media (min-width: $desktop-size) {
         content: "";
         background-color: $veryDarkBlueTopBG;
-        height: 200px;
+        height: 230px;
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
         z-index: -1;
+        margin-top: -30px;
     }
 }
 
@@ -111,13 +112,14 @@
 
 .toggle__slider.light {
     background: $lightToggle;
+    transition: 500ms;
+
+    &:hover {
+        background: $darkToggle;
+    }
 
     &:before {
         background-color: $white;
-    }
-    
-    @media (min-width: $desktop-size) {
-        background: $darkToggle;
     }
 }
 

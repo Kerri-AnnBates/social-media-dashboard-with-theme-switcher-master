@@ -15,6 +15,10 @@ body {
   &.light {
     background-color: $white;
     color: $darkGrayishBlueText;
+
+    .dash__header-title {
+      color: $veryDarkBlueText;
+    }
   }
 }
 
